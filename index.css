@@ -1,0 +1,300 @@
+:root{
+    --clr-moderate-violet:  hsl(263, 55%, 52%);
+    --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-grayish-blue: hsl(210, 46%, 95%);
+    --font-family: 'Barlow Semi Condensed', sans-serif;
+    --clr-picked: hsl(266, 55%, 66%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.desktop{
+    display: none;
+}
+body{
+    font-size: 13px;
+    background: var(--clr-grayish-blue);
+}
+.container{
+    width: 100%;
+    padding: 15% 5% 15% 5%;
+}
+.profile-info{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 1rem;
+}
+.profile{
+    width: 2rem;
+    border-radius: 50%;
+}
+.username{
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+.qualification{
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+.heading{
+    font-size: 0.7rem;
+    font-family: var(--font-family);
+    font-family: 500;
+}
+.para{
+    font-family: var(--font-family);
+    font-size: 500;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+/* first */
+.first{
+    background: var(--clr-moderate-violet);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 2rem;
+}
+#daniel-clifford-profile{
+    border: 2px solid var(--clr-picked);
+}
+#daniel-clifford-username{
+    color: var(--clr-white);
+}
+#daniel-clifford-qualification{
+    color: var(--clr-picked);
+}
+#first-heading{
+    color: var(--clr-white);
+}
+#first-para{
+    color: var(--clr-picked);
+}
+.quote{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: -1;
+}
+/* second */
+.second{
+    background: var(--clr-very-dark-grayish-blue);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+}
+#jonathan-walter-username{
+    color: var(--clr-white);
+}
+#jonathan-walters-qualification{
+    color: var(--clr-light-gray);
+}
+#second-heading{
+    color: var(--clr-white);
+}
+#second-para{
+    color: var(--clr-light-gray);
+}
+/* third */
+.third{
+    background: var(--clr-white);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+}
+#jeanette-harmon-username{
+    color: var(--clr-very-dark-grayish-blue);
+}
+#jeanette-harmon-qualification{
+    color: var(--clr-light-gray);
+}
+#third-heading{
+    color: var(--clr-very-dark-grayish-blue);
+}
+#third-para{
+    color: var(--clr-light-gray);
+}
+/* fourth */
+.fourth{
+    background: var(--clr-dark-blackish-blue);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+}
+#patrick-abrams-username{
+    color: var(--clr-white);
+}
+#patrick-abrams-qualification{
+    color: var(--clr-light-gray);
+}
+#fourth-heading{
+    color: var(--clr-white);
+}
+#fourth-para{
+    color: var(--clr-light-gray);
+}
+/* fifth */
+.fifth{
+    background: var(--clr-white);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 3%;
+    margin-bottom: 2rem;
+}
+#kira-whittle-username{
+    color: var(--clr-very-dark-grayish-blue);
+}
+#kira-wittle-qualification{
+    color: var(--clr-light-gray);
+}
+#fifth-heading{
+    color: var(--clr-very-dark-grayish-blue);
+}
+#fifth-para{
+    color: var(--clr-light-gray);
+}
+.attribution{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--clr-very-dark-grayish-blue);
+    font-family: var(--font-family);
+}
+.attribution>a{
+    color: var(--clr-very-dark-grayish-blue);
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+@media(min-width:1440px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: initial;
+    } 
+    body{
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .container-d{
+        width: 100%;
+        padding: 0 5% 0 5%;
+        display: grid;
+        grid-template-rows: repeat(2);
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas:
+        "first first second fifth"
+        "third fourth fourth fifth";
+        grid-column-gap: 2rem;
+    }
+    .profile-info-d{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .para-d{
+        font-family: var(--font-family);
+        font-size: 500;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .first-d{
+        background: var(--clr-moderate-violet);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: relative;
+        z-index: -1;
+        margin-bottom: 1rem;
+        grid-area: first;
+    }   
+    .second-d{
+        background: var(--clr-very-dark-grayish-blue);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 1rem;
+        grid-area: second;
+    }
+    .third-d{
+        background: var(--clr-white);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 1rem;
+        grid-area: third;
+    }
+    .fourth-d{
+        background: var(--clr-dark-blackish-blue);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 1rem;
+        grid-area: fourth;
+    }
+    .fifth-d{
+        background: var(--clr-white);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 1rem;
+        grid-area: fifth;
+    }
+    .attribution-d{
+        padding-top: 5rem;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        color: var(--clr-very-dark-grayish-blue);
+        font-family: var(--font-family);
+    }
+    .attribution-d>a{
+        color: var(--clr-very-dark-grayish-blue);
+        font-family: var(--font-family);
+        text-decoration: none;
+        position: relative;
+    }
+    .attribution-d>a::after{
+        content: "";
+        background: var(--clr-very-dark-grayish-blue);
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        transform-origin: center;
+        transform: scaleX(0);
+        transition: 300ms;
+    }
+    .attribution-d>a:hover::after{
+        transform: scaleX(1);
+    }
+}
