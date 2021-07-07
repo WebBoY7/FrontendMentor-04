@@ -182,7 +182,7 @@ body{
     font-family: var(--font-family);
     text-decoration: none;
 }
-@media(min-width:850px){
+@media(min-width:1440px){
     .mobile{
         display: none;
     }
